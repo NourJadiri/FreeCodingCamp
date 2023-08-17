@@ -1,0 +1,118 @@
+:root{
+    /* CSS HEX */
+    --lavender-blush: #FEEBF5ff;
+    --dark-purple: #2e0219ff;
+    --tyrian-purple: #4a001fff;
+    --tyrian-purple-2: #6a0f49ff;
+    --bittersweet: #f26157ff;
+
+    /* CSS HSL */
+    --baby-powder: hsla(60, 100%, 99%, 1);
+    --dark-purple: hsla(329, 92%, 9%, 1);
+    --tyrian-purple: hsla(335, 100%, 15%, 1);
+    --tyrian-purple-2: hsla(322, 75%, 24%, 1);
+    --bittersweet: hsla(4, 86%, 65%, 1);
+
+}
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+#navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 0;
+    background-color: var(--lavender-blush);
+    height: 100vh;
+    width: 15rem;
+    border-right: 1px solid var(--tyrian-purple);
+    transition: 0.25s ease-in-out;
+    box-shadow: var(--tyrian-purple-2) 0px 0px 5px;
+}
+
+main{
+    padding: 1rem;
+    margin-left: 15rem;
+    transition: 0.25s linear;
+}
+
+@media(max-width: 768px){
+    #navbar{
+        width: 0;
+        transition: 0.25s ease-in-out;
+    }
+    #navbar > *{
+        display: none;
+    }
+    main{
+        margin-left: 0;
+    }
+}
+
+#navbar ul{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar > ul > li{
+    color: var(--tyrian-purple);
+    margin: 0;
+    list-style: none;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 1px solid var(--tyrian-purple);
+    transition: 0.25s ease-in-out;
+}
+
+#navbar > ul > li:hover{
+    background-color: var(--tyrian-purple);
+    cursor: pointer;
+    color: var(--lavender-blush);
+}
+
+#navbar a{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+}
+
+#topic{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 1rem;
+    background-color: var(--tyrian-purple);
+    color: var(--lavender-blush);
+    text-align: center;
+}
+
+.justified{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.bold{
+    font-weight: 600;
+}
+article{
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--baby-powder);
+    border-radius: 5px;
+    box-shadow: var(--tyrian-purple-2) 0px 0px 5px;
+}
+
+main section h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 1rem;
+    font-weight: 500;
+}

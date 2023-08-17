@@ -1,0 +1,120 @@
+:root{
+    /* CSS HEX */
+    --dark-purple: #2b061eff;
+    --rose-taupe: #875053ff;
+    --dark-green: #002626ff;
+    --pale-dogwood: #fac9b8ff;
+    --salmon-pink: #f29ca3ff;
+    
+    /* CSS HSL */
+    --dark-purple: hsla(321, 76%, 10%, 1);
+    --rose-taupe: hsla(357, 26%, 42%, 1);
+    --dark-green: hsla(180, 100%, 7%, 1);
+    --pale-dogwood: hsla(15, 87%, 85%, 1);
+    --salmon-pink: hsla(355, 77%, 78%, 1);
+}
+
+body{
+    background-color: var(--rose-taupe);
+    color: whitesmoke;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+form{
+    width: 75%;
+    max-width: 600px;
+    min-width: 200px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+h1,p{
+    margin: 1em auto;
+    text-align: center;
+}
+
+div{
+    margin: 1em auto;
+    width: 60%;
+}
+
+input, select, textarea{
+    background-color: var(--dark-purple);
+    margin: 10px 0 0 0;
+    border: solid var(--dark-purple) 2px;
+    color: whitesmoke;
+    width: 100%;
+    min-height: 2em;
+    transition: all 0.2s ease-in-out;
+    border-radius: 5px;
+}
+
+select{
+
+}
+input:hover, select:hover, textarea:hover{
+    border-color: var(--pale-dogwood);
+}
+
+textarea{
+    min-height: 6em;
+    resize: none;
+}
+::placeholder{
+    color: whitesmoke;
+    opacity: 0.5;
+}
+
+.inline{
+    width: unset;
+    margin: 0 0.5rem 0 0;
+    vertical-align: middle;
+}
+
+fieldset{
+    border: none;
+    padding: 2rem 0;
+    border-bottom: solid var(--salmon-pink) 2px
+}
+
+fieldset:last-of-type{
+    border-bottom: none;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+a{
+    color: var(--dark-purple);
+}
+
+a:hover{
+    color: var(--salmon-pink);
+}
+
+a:visited{
+    color: var(--pale-dogwood);
+}
+
+button[type="submit"]{
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    background-color: var(--dark-purple);
+    color: whitesmoke;
+    border: solid var(--pale-dogwood) 2px;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover{
+    background-color: var(--pale-dogwood);
+    color: var(--dark-purple);
+    width: 65%;
+}
